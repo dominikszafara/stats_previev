@@ -2,3 +2,28 @@
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
+.container{
+background-color: hsl(233, 47%, 7%);
+width: 1440px;
+display: grid;
+
+}
+.textbox{
+background-color: hsl(244, 38%, 16%);
+}
+.imagebox{
+background-image:url(images/image-header-desktop.jpg);
+}
+.titletextbox{
+
+}
+
+.maintextbox{
+
+}
+.statstextbox{
+
+}
+.singlestatsbox{
+
+}
