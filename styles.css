@@ -1,7 +1,18 @@
 .att { font-size: 11px; text-align: center; }
 .att a { color: hsl(228, 45%, 44%); }
+/*
+body{
+background-color: hsl(233, 47%, 7%);
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: center
+padding: 10%;
+}
 
+*/
 .container{
+    /*border-radius:20px; */
     background-color: hsl(233, 47%, 7%);
     max-width: 1440px;
     
@@ -9,7 +20,7 @@
  
     display: grid;
     grid-template-columns: 50% 50% ;
-    grid-template-rows: 100px 446px 100px;
+    grid-template-rows: 100px 75% 100px;
     grid-template-areas:
     'mtop mtop'
     'textbox imagebox'
@@ -26,6 +37,9 @@
     grid-column-end: 3;  
 }
 .textbox{
+    /*order: 2; */
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px ;
     justify-self: right;
     background-color: hsl(244, 38%, 16%);
     max-width: 80%;
@@ -33,14 +47,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    
 }
 .imagebox{
+    /*order: 1;*/
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px ;
     justify-self: left;
     background: hsl(277, 64%, 61%);;
-    max-width: 80%; 
+    max-width: 80%;
 }
 img{
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px ;
    width: 100%;
    height: 100%;
    opacity: 50%;
