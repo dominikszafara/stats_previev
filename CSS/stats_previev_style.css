@@ -1,0 +1,115 @@
+.att { font-size: 11px; text-align: center; }
+.att a { color: hsl(228, 45%, 44%); }
+.container{
+    max-width: 1440px;
+    margin: 2vh auto 2vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+.textbox{
+    overflow: hidden;
+    border-radius: 15px 0px 0px 15px;
+    justify-self: right;
+    background-color: hsl(244, 38%, 16%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+.imagebox{
+    overflow: hidden;
+    border-radius: 0px 15px 15px 0px;
+    justify-self: left;
+    background: hsl(277, 64%, 61%);;
+    width: 100%;
+}
+img{
+   width: 100%;
+   height: 100%;
+   opacity: 50%;
+}
+.titletextbox{
+    order: 1;
+    text-align: left;
+    color: hsl(0, 0%, 100%);
+    padding: 20px;
+    font-family: 'Inter', cursive;
+}
+span{
+    color:hsl(277, 64%, 61%);
+}
+h2{
+    color: hsla(0, 0%, 100%);
+}
+.maintextbox{
+    order: 2;
+    text-align: left;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 20px;
+    font-family: 'Lexend Deca', cursive;
+}
+.statstextbox{
+    order: 3;
+    /* flex in da flex ---> matriflex :P */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: hsla(0, 0%, 100%, 0.6);
+    padding: 20px;
+    font-family: 'Inter', cursive;
+}
+.box{
+    padding: 1%;
+    width: 30%;
+    text-align: center;
+}
+.box1{
+    order: 1;
+}
+.box2{ 
+    order: 2;
+}
+.box3{
+    order: 3;
+}
+/*desktop first - mobile second*/
+@media screen and (max-width: 875px) {
+    .container{
+        
+        max-width: 1440px;
+        margin: 2vh 10% 2vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagebox{
+        order: 1;
+        overflow: hidden;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .textbox{
+        order: 2;
+        overflow: hidden;
+        border-radius: 0px 0px 15px 15px;
+    }  
+    .titletextbox{
+        text-align: center;
+    }
+    .maintextbox{
+        text-align: center;
+    }
+    .statstextbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        width: 100%;
+    }
+}       
